@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Dot</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/all.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: url(./images/graduation-1.png);
+            background-color: rgba(2, 56, 29, 1);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .mix-bg {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(6, 110, 58);
+            background: rgb(7, 126, 66);
+            mix-blend-mode: multiply;
+            ;
+        }
+        
+        #login_btn {
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: #ffffff;
+            background-color: #00C268;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mix-bg" style="position: absolute;">
+
+    </div>
+    <div class="" style="justify-content: center; padding-top: 150px;">
+        <div class="card border-0 shadow" style="margin:auto; width:400px; padding: 30px 50px; align-items: center;">
+            <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+
+            </span>
+            <p>
+                <strong>sign in to your GreenDot account</strong>
+            </p>
+            <p>
+                with your social network
+            </p>
+            <div class="row col-12 mb-3">
+                <div class="col-4">
+                    <img class="img-fluid img-responsive" src="./images/fb.png" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid img-responsive" src="./images/ggle.png" alt="">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid img-responsive" src="./images/twt.png" alt="">
+                </div>
+            </div>
+            <form action="">
+                <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important; border:none!important;">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Username or Email address" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                </div>
+
+                <div class="input-group mb-1 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important;  border:none!important;">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <input type="password" placeholder="Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                </div>
+                <div>
+                    <input type="checkbox" style="margin-right:3px;">Remember Me
+                    <a href="http://" style="margin-left: 50px; color: #00C268;">Forgot Password?</a>
+                </div>
+
+                <input type="submit" name="" id="login_btn" value="Log in">
+                <p>Dont have an account? <a href="http://" style="color: #00C268;">Sign up</a></p>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

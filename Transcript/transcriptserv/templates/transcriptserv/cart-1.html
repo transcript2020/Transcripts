@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        .navbar {
+            width: 100vw;
+        }
+        
+        .nav-link {
+            color: black;
+        }
+        
+        form input,
+        select {
+            border-radius: 5px;
+            border: 1px solid rgb(139, 139, 139);
+            height: 40px;
+        }
+        
+        #proceed_btn {
+            color: #ffffff;
+            background: #00C268;
+            width: 300px;
+            padding: 10px;
+            border: 0;
+            margin: 90px 25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                    <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+                <span class="avatar-title "><img src="./images/GreenDot.png" alt="logo" class="img-fluid" /></span>
+
+                </span>
+
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mx-auto w-50 justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apply</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active mr-1">
+                        <a class="nav-link first_btn" href="#">Change Password</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link second_btn" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 150px;">
+        <div class="row" style="width: 100%; justify-content: space-around;">
+            <div class="card border-0 shadow mt-5" style="width: 450px; height: 280px; border-radius: 10px!important;">
+                <div class="card-header border-0" style="background: #00C268; color: #ffffff; border-radius: 10px 10px 0 0;">
+                    <p class="m-0">Service Request</p>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <div class="mb-3 p-3 text-center" style="font-size: 13px; width: 430px; height: 200px; margin: 10px; background: #00c26707; border: 1px solid #00c2674d;">
+                        <p>Payment for service Request</p>
+                        <div class="row justify-content-between">
+                            <div class="col-5 text-left">
+                                <p class="m-0">Service Charge</p>
+                                <p class="m-0">Shipping Fee</p>
+                                <p class="m-0">Total Fees</p>
+                                <br>
+                                <p class="m-0">Institutional fees</p>
+                                <br>
+                                <strong><p class="m-0">Total Fees</p></strong>
+                            </div>
+                            <div class="col-5 text-right">
+                                <p class="m-0">N 5,000.00</p>
+                                <p class="m-0">N 500.00</p>
+                                <p class="m-0">N 5,500.00</p>
+                                <br>
+                                <p class="m-0">N/A</p>
+                                <br>
+                                <strong><p class="m-0">N 5,500.00</p></strong>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 shadow mt-5" style="width: 450px; height: 280px; border-radius: 10px!important;">
+                <div class="card-header border-0" style="background: #00C268; color: #ffffff; border-radius: 10px 10px 0 0;">
+                    <p class="m-0">Summary</p>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <div class="mb-3 p-3 text-center align-items-center" style="font-size: 13px; width: 430px; height: 200px; margin: 10px; background: #00c26710; border: 1px solid #00c2674d;">
+                        <p class="text-left">Document - ID</p>
+                        <div class="row justify-content-between pt-1" style="border-top:1px solid rgb(129, 128, 128); border-bottom:1px solid rgb(143, 142, 142);">
+                            <div class="col-5 text-left">
+                                <p>3245613</p>
+                            </div>
+                            <div class="col-5 text-right">
+                                <strong><p>N 5,000.00</p></strong>
+                            </div>
+                        </div>
+                        <p> Net Amount: N 5,500.00</p>
+                        <p>
+                            <input type="radio" name="" id="">NGN - Nigerian customers
+                        </p>
+                        <p>
+                            <input type="radio" name="" id="">USD - International customers
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="proceed_btn">
+            Proceed to pay
+        </button>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.5.1.js "></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.js "></script>
+</body>
+
+</html>

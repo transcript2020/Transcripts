@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        .navbar {
+            width: 100vw;
+        }
+        
+        .nav-link {
+            color: black;
+        }
+        
+        form input,
+        select {
+            border-radius: 5px;
+            border: 1px solid rgb(139, 139, 139);
+            height: 40px;
+        }
+        
+        #proceed_btn {
+            color: #ffffff;
+            background: #00C268;
+            width: 300px;
+            padding: 10px;
+            border: 0;
+            margin: 90px 25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                    <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+                <span class="avatar-title "><img src="./images/GreenDot.png" alt="logo" class="img-fluid" /></span>
+
+                </span>
+
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mx-auto w-50 justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apply</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active mr-1">
+                        <a class="nav-link first_btn" href="#">Change Password</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link second_btn" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 150px;">
+        <div class="" style="width: 100%; text-align: center;">
+            <div>
+                <img src="./images/cart.png" alt="cart">
+            </div>
+            <div class="m-3">
+                <p>There are no items in your cart. Please go back and add items to your cart</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.5.1.js "></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.js "></script>
+</body>
+
+</html>

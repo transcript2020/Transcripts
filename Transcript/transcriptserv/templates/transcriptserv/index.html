@@ -1,0 +1,471 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Dot</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'transcriptserv/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'transcriptserv/css/all.css' %}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        .navbar {
+            background-color: #F2FCF7!important;
+            width: 100vw;
+        }
+        
+        .nav-link {
+            color: black!important;
+        }
+        
+        .second_btn {
+            width: 100px;
+            background: #00C268;
+            border: 1px solid#00C268;
+            text-align: center;
+            padding: 7px 10px;
+            color: #ffffff !important;
+            border-radius: 1.5rem;
+        }
+        
+        .second_btn:hover {
+            text-decoration: none;
+        }
+        
+        .third_btn {
+            width: 100px;
+            background: #ffffff;
+            text-align: center;
+            padding: 7px 20px;
+            color: #1B0D40 !important;
+            border-radius: 1.5rem;
+            margin: 20px;
+        }
+        
+        .first {
+            background-image: url("{% static 'transcriptserv/img/bg.png' %}");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 3% 5% 3% 20%;
+            width: 100vw;
+        }
+        
+        .gradbg {
+            background-image: url("{% static 'transcriptserv/img/Graduation.png' %}");
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .third {
+            height: 30vh;
+            background-color: #1B0D40;
+        }
+        
+        .fourth {
+            height: 20vh;
+        }
+        
+        .footer {
+            height: 40vh;
+            background-color: #1B0D40;
+            width: 100vw;
+        }
+        
+        .mix-bg {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(6, 110, 58);
+            background: rgb(7, 126, 66);
+            mix-blend-mode: multiply;
+            ;
+        }
+        
+        #login_btn {
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: #ffffff;
+            background-color: #00C268;
+            margin: 5px 0;
+        }
+        
+        .modal {
+            background: url("{% static 'transcriptserv/img/graduation-1.png' %}");
+            background-color: rgba(2, 56, 29, 1);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                    <span class="avatar-title "><img src="{% static 'transcriptserv/img/logo.png' %}" alt="logo" class="img-fluid" /></span>
+                <span class="avatar-title "><img src="{% static 'transcriptserv/img/GreenDot.png' %}" alt="logo" class="img-fluid" /></span>
+                </span>
+
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" style="z-index: 5; background-color: rgb(15, 218, 116);" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mx-auto w-50 justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apply</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-right align-items-center">
+                    <li class="nav-item active mr-1 mt-1">
+                        <a class="nav-link second_btn" href="#" style="background: none; color: #00C268!important; " data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item ml-1 mr-1 mt-1">
+                        <a class="nav-link second_btn" href="#" data-toggle="modal" data-target="#regModal">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="first">
+        <div class="row">
+            <div class="col-7" style="z-index: 2;">
+                <div class="txt" style="width: 400px; margin: 15px 0;">
+                    <h3 style="text-transform: capitalize; line-height: 2.5rem;">
+                        Request and send your high school transcripts and graduation verifications
+                    </h3>
+                </div>
+
+                <div style="width: 400px;">
+                    <h6 style="line-height: 1.5rem; margin: 15px 0;">
+                        The fast, secure and easy way to request and release your records to agencies, educational institutions or employers.
+                    </h6>
+                </div>
+                <div style="margin: 15px 0;">
+                    <a href="" class="second_btn" data-toggle="modal" data-target="#regModal">Get Started</a>
+
+                </div>
+            </div>
+            <div class="col-5 gradbg">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+
+        <div class="row justify-content-around" style="padding: 50px 80px;">
+            <p>
+                <h5>
+                    ABOUT US
+                </h5>
+
+            </p>
+            <p class="" style="text-align: center;">
+                Greendot Services(Previously ClearTranscripts) founded by IIM/IIT/XLRI alumnus, helps alumni students to get their Education Transcript and other Records from their respective universities/institutes across India and acts as a bridge between alumni and
+                university. We provide hassle-free Document procurement which saves your time and energy
+            </p>
+
+            <div class="card px-5 py-3 shadow border-0 my-5" style="width: 300px; border-radius: 20px; text-align: center">
+                <img src="{% static 'transcriptserv/img/mission.png' %}" alt=""/>
+                <h4>Our Mission</h4>
+                <p>
+                    Provide Transparent Service To Our Customers. Customer Satisfaction is our utmost priority.
+                </p>
+            </div>
+            <div class="card px-5 py-3 shadow border-0 my-5" style="width: 300px; border-radius: 20px; text-align: center">
+                <img src="{% static 'transcriptserv/img/values.png' %}" alt=""/>
+                <h4>Our Values</h4>
+                <p>
+                    Provide Transparent Service To Our Customers. Customer Satisfaction is our utmost priority.
+                </p>
+            </div>
+            <div class="card px-5 py-3 shadow border-0 my-5" style="width: 300px; border-radius: 20px; text-align: center;">
+                <img src="{% static 'transcriptserv/img/vision.png' %}" alt=""/>
+                <h4>Our Vision</h4>
+                <p>
+                    Provide Transparent Service To Our Customers. Customer Satisfaction is our utmost priority.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row third">
+        <div class="container" style="text-align: center; color: #ffffff; padding: 80px;">
+            <h4>
+                Need your transcipt?
+            </h4>
+            <a href="{% url 'home' %}" class="third_btn">Order Now</a>
+        </div>
+    </div>
+    <div class="fourth">
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container p-3">
+                <div class="row justify-content-around pt-5">
+                    <div class="card border-0" style="background:0!important; color: #ffffff;">
+                        <h5>
+                            About Us
+                        </h5>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>About GreenDot</li>
+                            <li>We are hiring</li>
+                            <li>Terms & Conditions</li>
+                            <li>Biling Policy</li>
+                        </ul>
+                    </div>
+                    <div class="card border-0" style="background:0!important; color: #ffffff;">
+                        <h5>
+                            Support
+                        </h5>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>support@greendot.com</li>
+                            <li>safety tips</li>
+                            <li>Contact Us</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+                    <div class="card border-0" style="background:0!important; color: #ffffff;">
+                        <h5>
+                            Members
+                        </h5>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>Login</li>
+                            <li>Register</li>
+
+                        </ul>
+                    </div>
+                    <div class="card border-0" style="background:0!important; color: #ffffff;">
+                        <h5>
+                            Download App
+                        </h5>
+                        <ul style="list-style: none; padding: 0;">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 100px;">
+            <div class="modal-content p-5">
+
+                <div class="modal-body text-center align-items-center justify-content-center" style="margin:auto; width:400px; padding: 30px 50px; align-items: center;">
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="{% static 'transcriptserv/img/logo.png' %}" alt="logo" class="img-fluid" /></span>
+
+                    </span>
+                    <p>
+                        <strong>sign in to your GreenDot account</strong>
+                    </p>
+                    <p>
+                        with your social network
+                    </p>
+                    <div class="row col-12 mb-3">
+                        <div class="col-4">
+                            <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/fb.png' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/ggle.png' %}" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/twt.png' %}" alt="">
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important; border:none!important;">
+                                        <i class="far fa-user"></i>
+                                    </span>
+                            </div>
+                            <input type="text" placeholder="Username or Email address" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                        </div>
+
+                        <div class="input-group mb-1 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important;  border:none!important;">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                            </div>
+                            <input type="password" placeholder="Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                        </div>
+                        <div>
+                            <input type="checkbox" style="margin-right:3px;">Remember Me
+                            <a href="http://" style="margin-left: 50px; color: #00C268;">Forgot Password?</a>
+                        </div>
+
+                        <input type="submit" name="" id="login_btn" value="Log in">
+                        <p>Dont have an account? <a href="http://" style="color: #00C268;">Sign up</a></p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--signup Modal -->
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 5px;">
+            <div class="modal-content p-5">
+
+                <div class="modal-body text-center align-items-center justify-content-center" style="margin:auto; width:400px; padding: 30px 50px; align-items: center;">
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="{% static 'transcriptserv/img/logo.png' %}" alt="logo" class="img-fluid" /></span>
+
+                    </span>
+                    <p>
+                        <strong>Create your GreenDot account</strong>
+                    </p>
+                    <p>
+                        with your social network
+                    </p>
+                    <div class="row col-12 mb-3">
+                        <div class="col-4" style="height: 40px;">
+                            <a href="">
+                                <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/fb.png' %}" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-4">
+                            <a href="">
+                                <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/ggle.png' %}" alt="">
+                            </a>
+
+                        </div>
+                        <div class="col-4">
+                            <a href="">
+                                <img class="img-fluid img-responsive" src="{% static 'transcriptserv/img/twt.png' %}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 50px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important; border:none!important;">
+                                    <i class="far fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" placeholder="First Name" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                        </div>
+                        <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important; border:none!important;">
+                                    <i class="far fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" placeholder="Last Name" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                        </div>
+                        <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important; border:none!important;">
+                                    <i class="far fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="text" placeholder="Email address" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 258px;">
+                        </div>
+
+                        <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important;  border:none!important;">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" placeholder="Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                        </div>
+                        <div class="input-group mb-1 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="background: 0!important; border:none!important;">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" placeholder="Confirm Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                        </div>
+
+                        <input type="button" name="" id="login_btn" value="Sign Up" data-toggle="modal" data-target="#successregModal">
+                        <p>Already have an account? <a href="http://" style="color: #00C268;">Log in</a></p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--signup success modal-->
+    <div class="modal fade" id="successregModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 150px;">
+            <div class="modal-content p-5">
+
+                <div class="modal-body text-center align-items-center justify-content-center" style="margin:auto; width:400px; padding: 30px 50px; align-items: center;">
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="{% static 'transcriptserv/img/logo.png' %}" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="{% static 'transcriptserv/img/GreenDot.png' %}" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title my-3" style="width: 80px;" ><img src="{% static 'transcriptserv/img/success.png' %}" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <p class="my-5">
+                        You have successfully registered on GreenDot
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="{% static 'transcriptserv/js/jquery-3.5.1.js' %}"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="{% static 'transcriptserv/js/bootstrap.js' %}"></script>
+    <script src="{% static 'transcriptserv/js/all.js' %}"></script>
+</body>
+
+</html>

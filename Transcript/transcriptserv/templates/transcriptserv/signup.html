@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Green Dot</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/all.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: url(./images/graduation-1.png);
+            background-color: rgba(2, 56, 29, 1);
+            background-blend-mode: multiply;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .mix-bg {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(6, 110, 58);
+            background: rgb(7, 126, 66);
+            mix-blend-mode: multiply;
+            ;
+        }
+        
+        #login_btn {
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            color: #ffffff;
+            background-color: #00C268;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mix-bg" style="position: absolute;">
+
+    </div>
+    <div class="" style="justify-content: center; padding-top: 70px;">
+        <div class="card border-0 shadow" style="margin:auto; width:400px; padding:20px 50px; align-items: center;">
+            <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+
+            </span>
+            <p>
+                <strong>Create your GreenDot account</strong>
+            </p>
+            <p>
+                with your social network
+            </p>
+            <div class="row col-12 mb-3">
+                <div class="col-4" style="height: 40px;">
+                    <a href="">
+                        <img class="img-fluid img-responsive" src="./images/fb.png" alt="">
+                    </a>
+
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img class="img-fluid img-responsive" src="./images/ggle.png" alt="">
+                    </a>
+
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img class="img-fluid img-responsive" src="./images/twt.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 50px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important; border:none!important;">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" placeholder="First Name" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                </div>
+                <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important; border:none!important;">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Last Name" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 260px;">
+                </div>
+                <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important; border:none!important;">
+                            <i class="far fa-envelope"></i>
+                        </span>
+                    </div>
+                    <input type="text" placeholder="Email address" style="border: none; border-left: 1px solid rgb(175, 173, 173); width: 258px;">
+                </div>
+
+                <div class="input-group mb-3 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important;  border:none!important;">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <input type="password" placeholder="Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                </div>
+                <div class="input-group mb-1 rounded" style="border: solid 1px rgb(175, 173, 173); width: 300px; height: 45px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background: 0!important; border:none!important;">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                    </div>
+                    <input type="password" placeholder="Confirm Password" style="border: none; border-left: 1px solid rgb(175, 173, 173);">
+                </div>
+
+                <input type="button" name="" id="login_btn" value="Sign Up" data-toggle="modal" data-target="#successregModal">
+                <p>Already have an account? <a href="http://" style="color: #00C268;">Log in</a></p>
+
+            </form>
+        </div>
+    </div>
+    <!--success Modal-->
+    <div class="modal fade" id="successregModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 150px;">
+            <div class="modal-content p-5">
+
+                <div class="modal-body text-center align-items-center justify-content-center" style="margin:auto; width:400px; padding: 30px 50px; align-items: center;">
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title "><img src="./images/GreenDot.png" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+            
+                            <span class="avatar-title my-3" style="width: 80px;" ><img src="./images/success.png" alt="logo" class="img-fluid" /></span>
+                    </span>
+                    <p class="my-5">
+                        You have successfully registered on GreenDot
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.5.1.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

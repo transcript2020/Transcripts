@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        .navbar {
+            width: 100vw;
+        }
+        
+        .nav-link {
+            color: black;
+        }
+        
+        form input,
+        select {
+            border-radius: 5px;
+            border: 1px solid rgb(139, 139, 139);
+            height: 40px;
+        }
+        
+        #next_btn {
+            color: #ffffff;
+            background: #00C268;
+            width: 100%;
+            padding: 10px;
+            border: 0;
+        }
+        
+        #confirm_btn {
+            color: #ffffff;
+            background: #00C268;
+            width: 100px;
+            padding: 5px;
+            border: 1px solid #00C268;
+            border-radius: 50px;
+        }
+        
+        .progressbar {
+            counter-reset: step;
+        }
+        
+        .progressbar li {
+            list-style-type: none;
+            float: left;
+            width: 48%;
+            position: relative;
+        }
+        
+        .progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            text-align: center;
+            background: rgb(197, 196, 196);
+            color: #ffffff;
+            margin: 0px;
+            top: 0px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .progressbar li.active {
+            border-right: 1px solid rgb(133, 133, 133);
+        }
+        
+        .progressbar li.active:before {
+            color: #ffffff;
+            background: #00C268;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand">
+        <div class="container">
+            <a href="index.html" class="navbar-brand mr-16pt">
+
+
+                <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                    <span class="avatar-title "><img src="./images/logo.png" alt="logo" class="img-fluid" /></span>
+                <span class="avatar-title "><img src="./images/GreenDot.png" alt="logo" class="img-fluid" /></span>
+
+                </span>
+
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mx-auto w-50 justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apply</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active mr-1">
+                        <a class="nav-link first_btn" href="#">Change Password</a>
+                    </li>
+                    <li class="nav-item ml-1">
+                        <a class="nav-link second_btn" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center justify-content-center align-items-center" style="width: 500px;">
+        <ul class=" progressbar ">
+            <li>Enter your details</li>
+            <li class="active">Shipping Information</li>
+        </ul>
+    </div>
+    <div class="container" style="margin-top: 50px; margin-left: 600px;">
+        <form action="" style="width: 400px;">
+            <strong style="margin-left:150px;">Shipping Information</strong>
+            <div class=" form-group ">
+                <label for="full name ">Shipping to</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Request for</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Name</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Wes Reference Number</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Address</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">No of Sets</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Country</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">States</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Zip Code</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="form-group ">
+                <label for="full name ">Mobile Number</label><br>
+                <input type="text " placeholder="" style="width: 400px; border: solid 1px rgb(175, 173, 173);">
+            </div>
+            <div class="mb-3 p-3 text-center" style="font-size:12px; width: 400px; background: #00c26710; border: 1px solid #00c2674d;">
+                <p>Payment for service Request</p>
+                <div class="row justify-content-between">
+                    <div class="col-5 text-left">
+                        <p>Service Charge</p>
+                        <p>Shipping Fee</p>
+                        <p>Total Fees</p>
+                        <br>
+                        <p>Institutional fees</p>
+                    </div>
+                    <div class="col-5 text-right">
+                        <p>N 5,000.00</p>
+                        <p>N 500.00</p>
+                        <p>N 5,500.00</p>
+                        <br>
+                        <p>N/A</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <input type="button" value="Next " id="next_btn" data-toggle="modal" data-target="#exampleModal">
+        </form>
+    </div>
+    <!--add to cart success modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #00c26733;">
+        <div class="modal-dialog" role="document" style="margin-top: 200px;">
+            <div class="modal-content p-5">
+
+                <div class="modal-body text-center align-items-center justify-content-center">
+                    <div class="mx-auto" style="width: 100px;">
+                        <img class="img-fluid img-responsive" src="./images/cart.png" alt="warning">
+                    </div>
+                    <p>
+                        <strong>
+                            Added to cart
+                        </strong>
+                </div>
+                <div style="width: 100%;" class="text-center">
+
+                    <button type="button" class="btn btn-primary" id="confirm_btn" data-dismiss="modal" style="width: 150px; ">Continue</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.5.1.js "></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="./js/bootstrap.js "></script>
+</body>
+
+</html>
